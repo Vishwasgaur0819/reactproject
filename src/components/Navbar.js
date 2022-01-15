@@ -19,8 +19,8 @@ const Navbar = (props) => {
                 <a className="nav-link" href="#">{props.abouttext}</a>
               </li>
               <li className="nav-item" style={{display:'flex',alignItems:'center',}}>
-                <img alt='not found' src='./profile.jpg' height='30px' width='30px' />
-                ADMIN
+                Admin:Vishwas
+                
               </li>
 
 
