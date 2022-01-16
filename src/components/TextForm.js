@@ -31,7 +31,9 @@ const TextForm = (props) => {
         textarea.select();
         navigator.clipboard.writeText(textarea.value)
     }
-    
+     const handleclear=()=>{
+         settext('')
+     }
 
     return (
         <>
@@ -42,8 +44,9 @@ const TextForm = (props) => {
                     <textarea value={text} onChange={(event) => settext(event.target.value)} className="form-control" id="mybox" rows="8" cols="100"></textarea>
 
                 </div><br />
-                <button id='btn' onClick={() => handleUPClick()}>{btntext}</button>
-                <button onClick={()=>handlecopy()}>Copy text</button>
+                <button id='btn' onClick={() => handleUPClick()}>{btntext}</button> &nbsp;&nbsp;
+                <button onClick={()=>handlecopy()}>Copy text</button>&nbsp;&nbsp;
+                <button onClick={()=>handleclear()} >Clear Text</button>
                 
 
             </div>
